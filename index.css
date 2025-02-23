@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-Fabio {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-Fabio.close {
+    visibility: hidden;
+}
+
+.img-potongan {
+    position: absolute;
+    top: 36%;
+    left: 27%; 
+    transform: translate(-50%, -50%); 
+    width: 40%; 
+    max-width: 200px;
+    opacity: 0;
+}
+
+.img-potongan2 {
+    position: absolute;
+    top: 172%;
+    left: 24%; 
+    transform: translate(-50%, -50%); 
+    width: 40%; 
+    max-width: 200px;
+    opacity: 0;
+}
+
+.scratch-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    margin-top: -114%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    visibility: hidden;
+}
+
+.wrapper.open {
+    visibility: visible;
+}
+
+.heading {
+    font-size: 50px;
+    color: black;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.desripsi-heading {
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    letter-spacing: 1px;
+    font-family: "Lucida Sans", sans-serif;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.timer {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.subtimer {
+    margin-top: 20px;
+    width: 120px;
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.digit {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.tipedata {
+    color: #000;
+    background: #fff;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {    
+    .img-Fabio {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+    }
+    .img-Hari {
+        position: absolute;
+        margin-top: -170%;
+        margin-left: -10%;  
+        width: 130%; 
+        max-width: 600px;
+        opacity: 0;
+    }
+    .wikwok {
+        position: absolute;
+        margin-top: -650%;
+        margin-left: -5%;  
+        width: 240%; 
+        max-width: 600px;
+        opacity: 0;
+    }
+    .wrapper {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        padding: 10px;
+        position: relative;
+        bottom: 26vh;
+        left: 8%;
+        margin-top: -120%;
+        margin-left: -1%;
+    }
+    .heading {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .desripsi-heading {
+        font-size: 14px;
+        margin-bottom: -20px;
+    }
+    .timer {
+        gap: 10px;
+    }
+    .subtimer {
+        width: 63px;
+        height: 70px;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .digit {
+        font-size: 12px;
+    }
+    .tipedata {
+        font-size: 10px;
+    }
+
+}
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait),
+       (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    .img-Fabio {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .img-Hari {
+        position: absolute;
+        margin-top: -180%;
+        margin-left: -5%;  
+        width: 120%; 
+        max-width: 600px;
+        opacity: 0;
+    }
+}
+
+
